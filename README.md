@@ -31,6 +31,8 @@ Operation confirmation standards
 Roblox Studio 10.13 or higher (latest version)
 
 If you find anything that moves, please contact us from the page below!
+https://forms.gle/emp8q8WVEiqkDNAz6
+(The above uses a shortened URL.)
 (waiting)
 
 🍻Support
