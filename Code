@@ -1,0 +1,22 @@
+-- Attach this script to the edible model
+
+local ediblePart = script.Parent -- Assuming the script is attached to the edible part
+
+-- Function to handle player interactions
+local function onTouch(otherPart)
+    local character = otherPart.Parent
+    local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+    -- Check if the object touching the edible part is a player
+    if humanoid then
+        -- Here you can add the functionality for what happens when the player interacts with the edible part
+        -- For example, you might want to increase the player's health
+        humanoid.Health = humanoid.Health + 10 -- Increase health by 10 (modify as needed)
+        
+        -- You can also make the edible part disappear after being consumed
+        ediblePart:Destroy()
+    end
+end
+
+-- Connect the onTouch function to the Touched event of the edible part
+ediblePart.Touched:Connect(onTouch)
